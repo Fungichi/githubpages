@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Custom Page</title>
+    <style>
+        /* Reset margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Terminal-like background and text */
+        body {
+            background-color: #0b0c0f; /* dark terminal background */
+            color: #33ff33; /* green terminal text */
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: #33ff33;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #00ff00;
+        }
+
+        /* Blinking cursor effect */
+        .cursor::after {
+            content: '|';
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="cursor">Welcome to my page!</h1>
+    <p>You are seeing this page because I have not found a way to make my CLI game experienceable on the web using a demo link.</p>
+    <p>Please check out my elaborate readme of <a href="https://github.com/Fungichi/Chrobit">Chrobit</a></p>
+</body>
+</html>
